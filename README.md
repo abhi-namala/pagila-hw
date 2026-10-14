@@ -1,5 +1,5 @@
 # pagila-hw
-[![](https://github.com/mikeizbicki/pagila-hw/actions/workflows/tests.yml/badge.svg)](https://github.com/mikeizbicki/pagila-hw/actions?query=workflow%3Atests)
+[![](https://github.com/abhi-namala/pagila-hw/actions/workflows/tests.yml/badge.svg)](https://github.com/abhi-namala/pagila-hw/actions?query=workflow%3Atests)
 
 ## Background
 
@@ -15,7 +15,7 @@ The following picture illustrates the database's structure:
 
     Notice that this repo uses [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
     These are a tool that allow us to work with very complicated projects by including git repos within other git repos,
-    and here we use submodules to include the original [pagila database](https://github.com/devrimgunduz/pagila/tree/master).
+    and here we use submodules to include the original [pagila database](https://github.com/abhi-namala/pagila/tree/main).
     Pagila is under active development,
     and their data changes regularly.
     The use of submodules allows us to easily update our version of the database to match whichever version of theirs we want.

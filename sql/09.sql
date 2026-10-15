@@ -3,8 +3,11 @@
  * Use tables staff and payment.
  */
 
-SELECT first_name, last_name, SUM(amount) as sum 
-FROM payment
-JOIN staff ON payment.staff_id = staff.staff_id
-WHERE payment.payment_date >= '2020-01-01' AND payment.payment_date < '2020-02-01'
-GROUP BY staff.staff_id;
+SELECT staff.first_name, staff.last_name, SUM(payment.amount) as sum
+FROM staff
+JOIN payment ON staff.staff_id = payment.staff_id
+WHERE payment.payment_date >= '2020-01-01'
+  AND payment.payment_date < '2020-02-01'
+GROUP BY staff.staff_id, staff.first_name
+ORDER BY staff.first_name;
+

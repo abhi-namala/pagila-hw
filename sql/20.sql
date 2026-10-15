@@ -9,4 +9,4 @@ SELECT f.title,
        COUNT(*) OVER (PARTITION BY f.film_id) AS actor_count
 FROM film f
 JOIN film_actor fa ON fa.film_id = f.film_id
-ORDER BY actor_count DESC, f.title;
+ORDER BY actor_count DESC, f.title COLLATE "C";
